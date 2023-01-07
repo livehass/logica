@@ -1,54 +1,35 @@
-<<<<<<< HEAD
-<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
 
 <script>
-    function pulaLinha() {
-        document.write("<br>");
-        document.write("<br>");
-    }
+	
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
 
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-    }
+pincel.fillStyle = 'darkgrey';
+pincel.fillRect(0,0,600,400);
 
-    var numeroPensado =Math.round(Math.random() *10);
-    var chute = parseInt(prompt("Digite seu chute!"));
+pincel.fillStyle =	'green';
+pincel.fillRect(0,0,200, 400);
 
-    if (chute == numeroPensado) {
-    	mostra("você acertou!")
+pincel.fillStyle =	'red';
+pincel.fillRect(400,0,200, 400);
 
-    } else {
-    	mostra("você errou, o numero pensado foi " + numeroPensado);
+pincel.fillStyle = 'yellow';
+pincel.beginPath();
+pincel.moveTo(300, 200);
+pincel.lineTo(200, 400);
+pincel.lineTo(400, 400);
+pincel.fill();
 
-    }
-   
+pincel.fillStyle = 'blue';
+pincel.beginPath();
+pincel.arc(300, 200, 50, 0, 2 * 3.14);
+pincel.fill();
 
-=======
-<meta charset="UTF-8">
 
-<script>
-    function pulaLinha() {
-        document.write("<br>");
-        document.write("<br>");
-    }
 
-    function mostra(frase) {
-        document.write(frase);
-        pulaLinha();
-    }
 
-    var numeroPensado =Math.round(Math.random() *10);
-    var chute = parseInt(prompt("Digite seu chute!"));
 
-    if (chute == numeroPensado) {
-    	mostra("você acertou!")
 
-    } else {
-    	mostra("você errou, o numero pensado foi " + numeroPensado);
-
-    }
-   
-
->>>>>>> c750b7a3dac1cc8eda2720bf0b872597420b51d9
 </script>
